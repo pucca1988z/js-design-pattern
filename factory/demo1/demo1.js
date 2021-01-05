@@ -22,7 +22,7 @@ class Product3{
   fn2(){ console.log('fn2') }
 }
 class Creator {
-  create(name){
+  create(name){  // crucial part
     switch (name) {
       case 'p1':
         return new Product1(name)

@@ -1,17 +1,14 @@
 class Settings{
   constructor(){
-    
-    // important part!
+    // crucial part!
     if(Settings.instance instanceof Settings){
       return Settings.instance;
     }
-
     this.settingObject = {
       'background':'black',
       'version':Math.floor(Math.random()*4000)
     }
-    
-    Settings.instance = this;  // important part!
+    Settings.instance = this;  // crucial part!
   }
   get(key){
     return this.settingObject[key]
